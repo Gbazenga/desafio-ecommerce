@@ -14,10 +14,11 @@
 
 @media screen and (max-width: 1000px){
 
-    #grid-area{min-height:1750px}
+    #grid-area{min-height:2150px;padding: 100px 20px}
     #grid-area .img-block{width:95%;margin:5% 2.5%}
-    #grid-area h3{font-size:25px}
-    #grid-area h6{font-size:18px}
+    #grid-area h3{font-size:35px}
+    #grid-area h6{font-size:25px}
+    #grid-area .img-block{max-height:500px;margin:2% 2.5% !important}
     #grid-area .img-block:hover p{font-size:16px}
     
     #footer{min-height:1000px}
