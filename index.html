@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Desafio 1 - Ecommerce</title>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="media.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700;800&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+	<section id="header">
+		<div>
+			<div id="background-slide"></div>
+			<div id="background"></div>
+			<div id="header-text">
+				<h1>Tá ligado?</h1>
+				<h3>De qualquer jeito, ta todo mundo sabendo!<br>Os melhores preços bem aqui</h3>
+			</div>
+		</div>
+	</section>
+	<section id="grid-area">
+
+		<div id="fashion" class="img-block">
+			<img src=".\assets\bg-fashion.jpg">
+			<div class="grid-text">
+				<h3>Os looks mais irados da estação</h3><br>
+				<h6>Tudo o que você precisa para arrasar! Praia ou entrevista de emprego, aqui você encontra.</h6>
+				<p>Aliquam faucibus egestas congue. Quisque posuere lorem leo, eget mollis lectus consectetur eu. Vestibulum eu quam urna. Nam elit tortor, placerat non ullamcorper in, vulputate a felis. Aliquam aliquam, mi eu imperdiet convallis, elit ante venenatis ex, sed tempor ex felis eu velit. Proin ex ante, varius non justo vehicula, vehicula viverra nisl. Proin a tempor augue.</p>
+			</div>
+		</div>
+		<div id="fashion-bg" class="grid-bg"></div>
+		<div id="musica" class="img-block-right img-block">
+			<img src=".\assets\bg-musica.jpg">
+			<div class="grid-text">
+				<h3>Os Instrumentos para impressionar</h3><br>
+				<h6>Que tal aprender um novo skill? Impressione aquela pessoa especial com um desses aqui!</h6>
+				<p>Aliquam faucibus egestas congue. Quisque posuere lorem leo, eget mollis lectus consectetur eu. Vestibulum eu quam urna. Nam elit tortor, placerat non ullamcorper in, vulputate a felis. Aliquam aliquam, mi eu imperdiet convallis, elit ante venenatis ex, sed tempor ex felis eu velit. Proin ex ante, varius non justo vehicula, vehicula viverra nisl. Proin a tempor augue.</p>
+			</div>
+		</div>
+		<div id="musica-bg" class="grid-bg"></div>
+		<div id="life" class="img-block">
+			<img src=".\assets\bg-life.jpg">
+			<div class="grid-text">
+				<h3>O melhor para voce... e seu pet</h3><br>
+				<h6>Não podemos prometer que o seu zen vibre conosco... mas um chá ajuda de certeza!</h6>
+				<p>Aliquam faucibus egestas congue. Quisque posuere lorem leo, eget mollis lectus consectetur eu. Vestibulum eu quam urna. Nam elit tortor, placerat non ullamcorper in, vulputate a felis. Aliquam aliquam, mi eu imperdiet convallis, elit ante venenatis ex, sed tempor ex felis eu velit. Proin ex ante, varius non justo vehicula, vehicula viverra nisl. Proin a tempor augue.</p>
+			</div>
+		</div>
+		<div id="life-bg" class="grid-bg"></div>
+		<div id="gamer" class="img-block-right img-block">
+			<img src=".\assets\bg-gamer.jpg">
+			<div class="grid-text">
+				<h3>Cuidado" Área só para gamer!</h3><br>
+				<h6>Periféricos, torres, notebooks! O cyberespaço espera por você aqui!</h6>
+				<p>Aliquam faucibus egestas congue. Quisque posuere lorem leo, eget mollis lectus consectetur eu. Vestibulum eu quam urna. Nam elit tortor, placerat non ullamcorper in, vulputate a felis. Aliquam aliquam, mi eu imperdiet convallis, elit ante venenatis ex, sed tempor ex felis eu velit. Proin ex ante, varius non justo vehicula, vehicula viverra nisl. Proin a tempor augue.</p>
+			</div>
+		</div>
+		<div id="gamer-bg" class="grid-bg"></div>
+		<div id="static-bg" class="grid-bg"></div>
+	</section>
+	<section id="footer" class="box-section">
+		<div class="align-center">
+			<h4>Para mais Informações, siga nossa newsletter!</h4>
+			<input id="name" size="30" required placeholder="NOME"><br>
+			<input type="email" id="email" pattern=".+@globex\.com" size="30" required placeholder="EMAIL"><br>
+			<button onclick="store()" type="button reset" value="reset">Cadastrar</button>
+			<div id="footer-text">
+				<p>Contato :<br>guilhermebazenga@gmail.com</p>
+				<a href="https://github.com/Gbazenga"><img src=".\assets\github.png"></a>
+				<a href="https://www.linkedin.com/in/guilherme-bazenga-623325131/"><img src=".\assets\linkedin.png"></a>
+			</div>
+			<div class="footnote">
+				<img src=".\assets\logo-gama.png">
+				<img src=".\assets\logo-hc.png">
+			</div>
+		</div>
+	</section>
+
+	<script  type="text/javascript">
+	  function store(){
+	  	var inputName= document.getElementById("name");
+	  	localStorage.setItem("name", inputName.value);
+	    var inputEmail= document.getElementById("email");
+	    localStorage.setItem("email", inputEmail.value);
+	    alert("Cadastro realizado!");
+	    inputName.value="";
+	    inputEmail.value="";
+	    }
+	</script>
+
+</body>
+</html>

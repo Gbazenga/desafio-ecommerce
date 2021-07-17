@@ -1,0 +1,30 @@
+@media screen and (max-width: 1200px){
+    
+    #header{background-image: url("assets/bg-mobile.jpg");background-position:right;}
+    #header #background-slide{display:none;}
+    #header h1{font-size:180px}
+    #header h3{font-size:50px}
+
+    #grid-area{min-height:500px}
+    #grid-area h3{font-size:18px}
+    #grid-area h6{font-size:12px;padding-right:30px}
+    #grid-area .img-block:hover p{font-size:12px}
+   
+}
+
+@media screen and (max-width: 1000px){
+
+    #grid-area{min-height:1750px}
+    #grid-area .img-block{width:95%;margin:5% 2.5%}
+    #grid-area h3{font-size:25px}
+    #grid-area h6{font-size:18px}
+    #grid-area .img-block:hover p{font-size:16px}
+    
+    #footer{min-height:1000px}
+    #footer h4{font-size:45px}
+    #footer input{width:80%;font-size:30px;height:80px}
+    #footer button{font-size:50px;padding:20px 160px}
+    #footer p{font-size:30px}
+    #footer .footnote img, #footer .footnote img:nth-child(2){height:auto;width:40%; margin:5px 0}
+
+}
