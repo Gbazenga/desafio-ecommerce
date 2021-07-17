@@ -257,8 +257,8 @@ body{
 }
 
 #footer input{
-	width:40%;
-	height:30px;
+	width:30%;
+	height:20px;
 	padding: 5px;
 	margin: 10px 0;
 	}
@@ -281,7 +281,7 @@ body{
 	border-radius:0;
 	border:solid 4px #000;
 	background:#fff;
-	padding: 10px 100px;
+	padding: 10px 80px;
 	margin-top:20px;
 	font-weight:900;
 	font-size:20px;
